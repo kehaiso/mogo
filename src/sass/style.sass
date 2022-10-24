@@ -23,42 +23,69 @@ body, .banner, .img
 	position: relative
 
 .div1c
-	width: 85%
+	width: calc(0.15rem + 85vw)
 	margin: 0 auto
 .div1
 	display: inline-block
 	position: relative
 	margin: 1vh auto 0 0
-	width: 25%
+	width: calc(0.15rem + 11.5vw)
 .div2
 	display: inline-block
 	position: relative
 	text-align: right
-	margin: 1vh 0 0 auto
-	width: 70%
+	margin: 1vh auto 0 auto
+	width: calc(0.15rem + 68.5vw)
 	font-size: 0
-p
+
 .logo
 	color: #ffffff
 	font-size: 2.3vmin
-	width: 22%
-	margin: 0 auto 0 5.3vw
+	width: calc(0.8rem + 0.3vw)
+	margin: 0 auto 0 calc(0.01rem + 5.45vw)
+
 ul
-	width: 66%
+	& li.pli
+		width: calc(1.5rem + 3.7vw)
+
+ul
+	& li.ali
+		width: calc(1.8rem + 3.7vw)
+
+ul
+	& li.tli
+		width: calc(1.2rem + 3.7vw)
+
+ul
+	& li.kli
+		width: calc(1.2rem + 3.7vw)
+
+ul
+	& li.peli
+		width: calc(1.8rem + 3.7vw)
+
+ul
+	& li.sli
+		width: calc(0.5rem + 3.7vw)
+ul
+	& li.seli
+		width: calc(0.1rem + 3.7vw)
+
+ul
+
 	list-style-type: none
 	text-align: right
-	margin: 0 3vw 0 auto
+	margin: 0 auto 0 auto
 	& li
 		display: inline-block
-		font-size: 1vw
+		font-size: calc(0.5rem + 0.3vw)
 		text-decoration: none
 		text-align: center
-		width: 14%
 
 		& a
 			text-decoration: none
 			color: #ffffff
-			width: 3vw
+			width: calc(1.65rem + 3.2vw)
 
 		& a:after
 			margin-top: 1vh
@@ -75,17 +102,25 @@ ul
 
 		& a:hover
 			color: #fce38a
-.img
-
-	width: 1vw
-
+.sli
+	a
+		.img
+			padding: 0
+			margin: 0
+			width: calc(0.5rem + 0.3vw)
+.seli
+	a
+		.img1
+			padding: 0
+			margin: 0
+			width: calc(0.45rem + 0.3vw)
 .mogo
 	width: 30vmin
 	text-align: center
 
 .kaushan
 	color: #ffffff
-	font-size: 7vmin
+	font-size: 6vmin
 	font-family: 'Kaushan Script', cursive
 	top: 12vh
 	position: relative
@@ -105,13 +140,13 @@ ul
 .reactangle
 	width: 8vmin
 	height: 0.3vh
-	top: 25vh
+	top: 26vh
 	position: relative
 	background-color: #ffffff
 
 .button1
 	color: white
-	width: 12vmin
+	width: calc(0.45rem + 8.6vw)
 	height: 5vh
 	line-height: 1vh
 	position: relative
@@ -125,7 +160,7 @@ ul
 	font-size: 1.5vmin
 
 .slider
-	width: 85%
+	width: calc(0.15rem + 85vw)
 	position: relative
 	disply: block
 	text-align: center
@@ -135,12 +170,12 @@ ul
 	color: rgba(255, 255, 255, 0.5)
 
 .intro, .work, .about, .contacts
-	width: 22%
+	width: calc(0.15rem + 19.3vw)
 	display: inline-block
 	font-size: 0
 
 	.box1, .box2, .box3, .box4
-		width: 80%
+		width: calc(0.15rem + 14.6vw)
 		height: 0.3vh
 		display: inline-block
 		text-align: center
@@ -151,23 +186,23 @@ ul
 	text-align: left
 
 	.cc1, .cc2, .cc3, .cc4
-		width: 80%
+		width: calc(0.15rem + 14.6vw)
 		text-align: left
 		font-size: 0
 
 .counter1, .counter2, .counter3, .counter4, .co1, .co2, .co3, .co4
 	display: inline-block
-	width: 2vmin
+
 	text-align: left
 	margin: 0 auto
 
 .co1, .co2, .co3, .co4
 	text-decoration-line: none
-	font-size: 1vmin
+	font-size: calc(0.3rem + 0.3vw)
 
 .counter1, .counter2, .counter3, .counter4
-	font-size: 2vmin
-	padding-right: 0.5vmin
+	font-size: calc(0.7rem + 0.3vw)
+	padding-right: 0.3vmin
 
 .intro:hover
 	.counter1, .co1
@@ -195,21 +230,19 @@ ul
 
 .part1
 	width: 100%
-	height: 102vh
+	height: 110vh
 	background-color: #ffffff
 
 .what
 
 	width: 30%
-	margin: 0 auto
+	margin: 4vh auto 0 auto
 	text-align: center
 	font-family: 'Kaushan Script', cursive
 	font-size: 3vmin
 	padding: 0
 	p
-		margin-top: 4vh
-		margin-bottom: 4vh
-
+		margin: 0
 .story
 	font-family: 'Montserrat', sans-serif
 	width: 40%
@@ -224,20 +257,21 @@ ul
 	height: 0.3vh
 	position: relative
 	background-color: red
-	margin: 4vh auto
+	margin: 4vh auto 0 auto
 
 .lorem
 	font-family: 'Roboto', sans-serif
-	font-size: 1.2vmin
+	font-size: calc(0.5rem + 0.3vw)
 	color: #999999
-	width: 50%
+	width: calc(0.15rem + 50vw)
 	margin: 0 auto
 	text-align: center
 	top: 5vh
 	position: relative
+	height: 10vh
 
 .pics
-	width: 85%
+	width: calc(0.15rem + 85vw)
 	margin: 0 auto
 	text-align: center
 	top: 15vh
@@ -247,9 +281,9 @@ ul
 .a1
 	display: inline-block
 	vertical-align: top
-	width: 24%
-	height: 25vmin
-	margin: 0 5.1vmin 0 0
+	width: calc(0.15rem + 20vw)
+	height: 25vh
+	margin: 0 calc(0.15rem + 3.2vw) 0 0
 	position: relative
 	background-image: url("../assets/images/aboutus-photo-1.webp")
 	background-repeat: no-repeat
@@ -263,9 +297,9 @@ ul
 .a2
 	display: inline-block
 	vertical-align: top
-	width: 24%
-	height: 25vmin
-	margin: 0 5.1vmin 0 5.1vmin
+	width: calc(0.15rem + 20vw)
+	height: 25vh
+	margin: 0 calc(0.15rem + 3.2vw) 0 calc(0.15rem + 3.2vw)
 	position: relative
 	background-image: url("../assets/images/aboutus-photo-2.png")
 	background-repeat: no-repeat
@@ -279,9 +313,9 @@ ul
 .a3
 	display: inline-block
 	vertical-align: top
-	width: 24%
-	height: 25vmin
-	margin: 0 0 0 5.1vmin
+	width: calc(0.15rem + 20vw)
+	height: 25vh
+	margin: 0 0 0 calc(0.15rem + 3.2vw)
 	position: relative
 	background-image: url("../assets/images/aboutus-photo-3.webp")
 	background-repeat: no-repeat
@@ -385,12 +419,12 @@ ul
 			margin: 0 auto
 .facts
 	width: 100%
-	height: 25vmin
+	height: 20vmin
 	background-color: #95e1d3
 	position: relative
 	top: 30vh
 .factsv
-	width: 85%vmin
+	width: calc(0.15rem + 85vw)
 	position: relative
 	margin: 0 auto
 	text-align: center
@@ -398,14 +432,14 @@ ul
 
 	.facts1
 		display: inline-block
-		width: 14.3%
+		width: calc(0.15rem + 14.55vw)
 		text-align: center
 		color: white
 
 		border-left-color: white
 		border-left-width: 0.1vmin
 		border-left-style: solid
-		height: 25vmin
+		height: 20vmin
 		position: relative
 		div
 			margin: 0
@@ -416,14 +450,14 @@ ul
 			transform: translate(-50%, -50%)
 	.facts2
 		display: inline-block
-		width: 14.3%
+		width: calc(0.15rem + 14.55vw)
 		text-align: center
 		color: white
 
 		border-left-color: white
 		border-left-width: 0.1vmin
 		border-left-style: solid
-		height: 25vmin
+		height: 20vmin
 		position: relative
 		div
 			margin: 0
@@ -434,14 +468,14 @@ ul
 			transform: translate(-50%, -50%)
 	.facts3
 		display: inline-block
-		width: 14.3%
+		width: calc(0.15rem + 14.55vw)
 		text-align: center
 		color: white
 
 		border-left-color: white
 		border-left-width: 0.1vmin
 		border-left-style: solid
-		height: 25vmin
+		height: 20vmin
 		position: relative
 		div
 			margin: 0
@@ -452,14 +486,14 @@ ul
 			transform: translate(-50%, -50%)
 	.facts4
 		display: inline-block
-		width: 14.3%
+		width: calc(0.15rem + 14.55vw)
 		text-align: center
 		color: white
 
 		border-left-color: white
 		border-left-width: 0.1vmin
 		border-left-style: solid
-		height: 25vmin
+		height: 20vmin
 		position: relative
 		div
 			margin: 0
@@ -470,7 +504,7 @@ ul
 			transform: translate(-50%, -50%)
 	.facts5
 		display: inline-block
-		width: 14.3%
+		width: calc(0.15rem + 14.55vw)
 		text-align: center
 		color: white
 		border-right-color: white
@@ -479,7 +513,7 @@ ul
 		border-left-color: white
 		border-left-width: 0.1vmin
 		border-left-style: solid
-		height: 25vmin
+		height: 20vmin
 		position: relative
 		div
 			margin: 0
@@ -489,16 +523,16 @@ ul
 			-ms-transform: translate(-50%, -50%)
 			transform: translate(-50%, -50%)
 .num
-	font-size: 4vmin
+	font-size: calc(0.3rem + 2vw)
 	margin: 0
 	padding: 0
 	font-family: 'Montserrat', sans-serif
 .alp
-	font-size: 1vmin
-	margin: 0
+	font-size: calc(0.3rem + 0.4vw)
+	margin: 0 auto
 	padding: 0
 	font-family: 'Montserrat', sans-serif
-
+	width: calc(0.15rem + 14.5vw)
 .part2
 	width: 100%
 	height: 60vh
@@ -513,9 +547,10 @@ ul
 	font-size: 3vmin
 	padding: 0
 	p
-		margin-top: 4vh
-		margin-bottom: 4vh
+		margin: 4vh auto 0 auto
+
 .story1
+
 	font-family: 'Montserrat', sans-serif
 	width: 40%
 	margin: 0 auto
@@ -527,9 +562,8 @@ ul
 .reactangle6
 	width: 8vmin
 	height: 0.3vh
-	position: relative
+	margin: 4vh auto 0 auto
 	background-color: red
-	margin: 4vh auto
 
 .service
 	position: relative
@@ -538,42 +572,41 @@ ul
 	height: 30vh
 	font-size: 0
 .servicea
-	width: 85%
+	width: calc(0.15rem + 85vw)
 	height: 12vh
 	text-align: center
 	margin: 0 auto
 .servicea1, .servicea2, .servicea3
 	display: inline-block
-	width: 27.5%
+	width: calc(0.15rem + 24.5vw)
 	margin: 0 auto
 	border-bottom-style: solid
 	border-bottom-color: grey
-	border-bottom-width: 0.2vh
+	border-bottom-width: 0.15vh
 .servicea1
 	div
 		display: inline-block
 		margin: 0
 		padding: 0
 		height: 12vh
-		width: 60%
+		width: calc(0.15rem + 16vw)
 		text-align: left
 		margin: 0 auto
 		h5
 			margin: 0
 			text-align: left
 			font-family: 'Montserrat', sans-serif
-			font-size: 0.7vw
+			font-size: calc(0.3rem + 0.8vw)
 	img
 		vertical-align: top
 		margin-right: 0.5vw
-		height: 1vh
-		width: 1vw
+		width: calc(0.8rem + 0.3vw)
 .servicea1
 	div
 		p
 			color: grey
 			font-family: 'Roboto', sans-serif
-			font-size: 0.5vw
+			font-size: calc(0.4rem + 0.3vw)
 			margin: 0.5vh 0 0 0
 			padding: 0
 
@@ -583,24 +616,23 @@ ul
 		margin: 0
 		padding: 0
 		height: 12vh
-		width: 60%
+		width: calc(0.15rem + 16vw)
 		text-align: left
 		h5
 			margin: 0
 			text-align: left
 			font-family: 'Montserrat', sans-serif
-			font-size: 0.7vw
+			font-size: calc(0.3rem + 0.8vw)
 	img
 		vertical-align: top
 		margin-right: 0.5vw
-		height: 1vh
-		width: 1vw
+		width: calc(0.8rem + 0.3vw)
 .servicea2
 	div
 		p
 			color: grey
 			font-family: 'Roboto', sans-serif
-			font-size: 0.5vw
+			font-size: calc(0.4rem + 0.3vw)
 			margin: 0.5vh 0 0 0
 			padding: 0
 
@@ -610,37 +642,36 @@ ul
 		margin: 0
 		padding: 0
 		height: 12vh
-		width: 60%
+		width: calc(0.15rem + 16vw)
 		text-align: left
 		h5
 			margin: 0
 			text-align: left
 			font-family: 'Montserrat', sans-serif
-			font-size: 0.7vw
+			font-size: calc(0.3rem + 0.8vw)
 	img
 		vertical-align: top
 		margin-right: 0.5vw
-		height: 1vh
-		width: 1vw
+		width: calc(0.8rem + 0.3vw)
 .servicea3
 	div
 		p
 			color: grey
 			font-family: 'Roboto', sans-serif
-			font-size: 0.5vw
+			font-size: calc(0.4rem + 0.3vw)
 			margin: 0.5vh 0 0 0
 			padding: 0
 
 .serviceb
 	top: 7vh
-	width: 85%
+	width: calc(0.15rem + 85vw)
 	height: 12vh
 	text-align: center
 	margin: 0 auto
 	position: relative
 .serviceb1, .serviceb2, .serviceb3
 	display: inline-block
-	width: 27.5%
+	width: calc(0.15rem + 24.5vw)
 	margin: 0 auto
 
 .serviceb1
@@ -649,25 +680,24 @@ ul
 		margin: 0
 		padding: 0
 		height: 12vh
-		width: 60%
+		width: calc(0.15rem + 16vw)
 		text-align: left
 		margin: 0 auto
 		h5
 			margin: 0
 			text-align: left
 			font-family: 'Montserrat', sans-serif
-			font-size: 0.7vw
+			font-size: calc(0.3rem + 0.8vw)
 	img
 		vertical-align: top
 		margin-right: 0.5vw
-		height: 1vh
-		width: 1vw
+		width: calc(0.8rem + 0.3vw)
 .serviceb1
 	div
 		p
 			color: grey
 			font-family: 'Roboto', sans-serif
-			font-size: 0.5vw
+			font-size: calc(0.4rem + 0.3vw)
 			margin: 0.5vh 0 0 0
 			padding: 0
 
@@ -677,24 +707,23 @@ ul
 		margin: 0
 		padding: 0
 		height: 12vh
-		width: 60%
+		width: calc(0.15rem + 16vw)
 		text-align: left
 		h5
 			margin: 0
 			text-align: left
 			font-family: 'Montserrat', sans-serif
-			font-size: 0.7vw
+			font-size: calc(0.3rem + 0.8vw)
 	img
 		vertical-align: top
 		margin-right: 0.5vw
-		height: 1vh
-		width: 1vw
+		width: calc(0.8rem + 0.3vw)
 .serviceb2
 	div
 		p
 			color: grey
 			font-family: 'Roboto', sans-serif
-			font-size: 0.5vw
+			font-size: calc(0.4rem + 0.3vw)
 			margin: 0.5vh 0 0 0
 			padding: 0
 
@@ -704,24 +733,23 @@ ul
 		margin: 0
 		padding: 0
 		height: 12vh
-		width: 60%
+		width: calc(0.15rem + 16vw)
 		text-align: left
 		h5
 			margin: 0
 			text-align: left
 			font-family: 'Montserrat', sans-serif
-			font-size: 0.7vw
+			font-size: calc(0.3rem + 0.8vw)
 	img
 		vertical-align: top
 		margin-right: 0.5vw
-		height: 1vh
-		width: 1vw
+		width: calc(0.8rem + 0.3vw)
 .serviceb3
 	div
 		p
 			color: grey
 			font-family: 'Roboto', sans-serif
-			font-size: 0.5vw
+			font-size: calc(0.4rem + 0.3vw)
 			margin: 0.5vh 0 0 0
 			padding: 0
 
@@ -752,24 +780,28 @@ ul
 	font-family: 'Kaushan Script', cursive
 	font-size: 3vmin
 	padding: 0
+	p
+		margin: 4vh auto 0 auto
 .unique
+	position: relative
+	top: 4vh
 	font-family: 'Montserrat', sans-serif
 	width: 40%
 	margin: 0 auto
 	text-align: center
 	font-size: 3.5vmin
 	padding: 0
-	position: relative
-	top: 4vh
+	p
+		margin: 0
 
 .reactangle7
+	position: relative
+	top: 4vh
 	width: 8vmin
 	height: 0.3vh
 	position: relative
 	background-color: red
-	margin: 0 auto
-	position: relative
-	top: 4vh
+	margin: 4vh auto 0 auto
 
 .tablet
 	width: 40vmin
@@ -801,3 +833,432 @@ ul
 	left: 47vmin
 	right: 0
 	margin: 0 auto
+
+.service2
+	width: 100%
+	height: 82vh
+
+.what3
+	width: 30%
+	margin: 12vh auto 0 auto
+	text-align: center
+	font-family: 'Kaushan Script', cursive
+	font-size: 3vmin
+	padding: 0
+	p
+		margin: 0
+.story3
+	font-family: 'Montserrat', sans-serif
+	width: 40%
+	margin: 0 auto
+	text-align: center
+	font-size: 3.5vmin
+	padding: 0
+	p
+		margin: 0
+.reactangle8
+	width: 8vmin
+	height: 0.3vh
+	position: relative
+	background-color: red
+	margin: 4vh auto 0 auto
+
+.service2
+	width: 100%
+	margin: 0 auto
+	height: 70vh
+.what3
+	width: 30%
+	margin: 12vh auto 0 auto
+	text-align: center
+	font-family: 'Kaushan Script', cursive
+	font-size: 3vmin
+	padding: 0
+	p
+		margin: 0
+.story3
+	font-family: 'Montserrat', sans-serif
+	width: 40%
+	margin: 0 auto
+	text-align: center
+	font-size: 3.5vmin
+	padding: 0
+	p
+		margin: 0
+.reactangle8
+	width: 8vmin
+	height: 0.3vh
+	position: relative
+	background-color: red
+	margin: 4vh auto
+
+.lorem2
+	font-family: 'Roboto', sans-serif
+	font-size: calc(0.5rem + 0.3vw)
+	color: #999999
+	width: calc(0.15rem + 50vw)
+	margin: 0 auto
+	text-align: center
+	top: 5vh
+	position: relative
+	height: 10vh
+
+.con1
+	width: calc(0.15rem + 70vw)
+
+	margin: 8vh auto 0 auto
+	padding: 0
+	font-size: 0
+.con1a, .con1b
+	display: inline-block
+
+.con1a
+	width: calc(0.15rem + 29vw)
+	height: calc(15.2rem + 1vw + 8px)
+
+	margin: 0 calc(0.15rem + 5vw) 0 auto
+	padding: 0
+	background-image: url("../assets/images/services.webp")
+	background-position: center top
+	background-repeat: no-repeat
+	background-size: cover
+.con1b
+	position: absolute
+	width: calc(0.15rem + 34vw)
+	height: calc(15.2rem + 1vw + 8px)
+	margin: 0 0 0 auto
+	padding: 0
+.dropdown1
+	display: block
+
+	margin: 0
+	padding: 0
+.dropdown-content1
+	display: none
+
+	background-color: #f9f9f9
+	width: calc(0.15rem + 34vw)
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2)
+	height: calc(10.7rem + 0.25vw + 4px)
+	margin: 0
+
+.dropdown1:hover .dropdown-content1
+
+	display: block
+.dropdown1:hover
+	.mouse
+		#icon1
+			-ms-transform: rotate(180deg)
+			transform: rotate(180deg)
+			text-align: left
+.dropdown1:hover
+	.mouse
+		#icon2
+			-ms-transform: rotate(180deg)
+			transform: rotate(180deg)
+			text-align: left
+.dropdown1:hover
+	.mouse
+		#icon3
+			-ms-transform: rotate(180deg)
+			transform: rotate(180deg)
+			text-align: left
+.mouse
+	height: calc(1.5rem + 0.25vw)
+	width: calc(0.15rem + 34vw)
+	border-bottom-style: solid
+	border-bottom-width: 1px
+	border-bottom-color: grey
+	border-top-style: solid
+	border-top-width: 1px
+	border-top-color: grey
+	.p1
+		display: inline-block
+		margin: 1px 0 0 0
+
+		width: calc(0.15rem + 28vw)
+
+		font-family: 'Montserrat', sans-serif
+		font-size: calc(0.5rem + 0.15vw)
+
+.mouse
+	height: calc(1.5rem + 0.25vw)
+	width: calc(0.15rem + 34vw)
+	border-bottom-style: solid
+	border-bottom-width: 1px
+	border-bottom-color: grey
+	border-top-style: solid
+	border-top-width: 1px
+	border-top-color: grey
+	.p2
+
+		display: inline-block
+		margin: 1px 0 0 0
+
+		width: calc(0.15rem + 28vw)
+
+		font-family: 'Montserrat', sans-serif
+		font-size: calc(0.5rem + 0.15vw)
+.mouse
+	height: calc(1.5rem + 0.25vw)
+
+	width: calc(0.15rem + 34vw)
+	border-bottom-style: solid
+	border-bottom-width: 1px
+	border-bottom-color: grey
+	border-top-style: solid
+	border-top-width: 1px
+	border-top-color: grey
+
+	.p3
+		display: inline-block
+		margin: 1px 0 0 0
+
+		width: calc(0.15rem + 28vw)
+
+		font-family: 'Montserrat', sans-serif
+		font-size: calc(0.5rem + 0.15vw)
+.mouse1
+	p
+
+		margin: 0
+		padding: 0
+		width: calc(0.15rem + 32vw)
+		font-size: calc(0.45rem + 0.3vw)
+		font-family: 'Roboto', sans-serif
+		height: 100%
+		color: grey
+		display: inline-block
+div.mouse1
+	height: 100%
+	overflow: scroll
+
+.mouse1::-webkit-scrollbar
+	width: calc(0.25rem + 0.3vw)
+.mouse1::-webkit-scrollbar-thumb
+	border-radius: 10px
+	background-color: #95e1d3
+.mouse1::-webkit-scrollbar-track
+	border-radius: 10px
+
+#icon1, #icon2, #icon3
+	font-size: calc(0.45rem + 0.3vw)
+	display: inline-block
+	text-align: right
+	width: calc(0.15rem + 1.5vw)
+	margin: 0
+
+.mouse
+	img
+
+		display: inline-block
+		padding: calc(0.15rem + 0.15vw) calc(0.15rem + 0.15vw) 0 0
+		width: calc(0.8rem + 0.15vw)
+		margin: 0
+.sliderabc
+	width: 100%
+	height: 18vh
+	background-color: rgba(218, 214, 214, 0.966)
+	top: 10vh
+	position: relative
+.slideraaa
+	width: calc(0.15rem + 70vw)
+	position: relative
+	text-align: center
+	font-size: 0
+	margin: 0 auto
+	top: 6vh
+.slidera2, .slidera1, .slidera0, .slidera3
+	display: inline-block
+
+.slidera2
+	width: calc(0.15rem + 44vw)
+	font-size: calc(0.45rem + 0.3vw)
+	font-family: 'Kaushan Script', cursive
+	text-align: left
+.slidera1
+	width: calc(0.15rem + 16vw)
+	img
+		width: calc(0.15rem + 1.5vw)
+		border-style: solid
+		border-color: #95e1d3
+		border-width: 2px
+		padding: calc(0.15rem + 1vw)
+.slidera0
+	width: calc(0.15rem + 2vw)
+.slidera3
+	width: calc(0.15rem + 2vw)
+#icon4
+	text-align: left
+	font-size: calc(0.15rem + 3vw)
+	width: calc(0.15rem + 3vw)
+	height: calc(0.15rem + 3vw)
+	display: inline-block
+#icon5
+	text-align: right
+	font-size: calc(0.15rem + 3vw)
+	width: calc(0.15rem + 3vw)
+	height: calc(0.15rem + 3vw)
+	display: inline-block
+.service3
+	width: 100%
+	height: 90vh
+	top: 20vh
+	position: relative
+.pics1
+	width: calc(0.15rem + 85vw)
+	margin: 0 auto
+	text-align: center
+	top: 15vh
+	position: relative
+	font-size: 0
+
+.a4
+	display: inline-block
+	vertical-align: top
+	width: calc(0.15rem + 20vw)
+	height: 45vh
+	margin: 0 calc(0.15rem + 3.2vw) 0 0
+	position: relative
+	background-image: url("../assets/images/ourTeam1.webp")
+	background-repeat: no-repeat
+	background-position: center center
+	text-decoration: none
+	font-size: 0
+	p
+		img
+			height: 0%
+			width: 0%
+.a5
+	display: inline-block
+	vertical-align: top
+	width: calc(0.15rem + 20vw)
+	height: 45vh
+	margin: 0 calc(0.15rem + 3.2vw) 0 calc(0.15rem + 3.2vw)
+	position: relative
+	background-image: url("../assets/images/ourTeam2.webp")
+	background-repeat: no-repeat
+	background-position: center top
+	text-decoration: none
+	font-size: 0
+	p
+		img
+			height: 0%
+			width: 0%
+.a6
+	display: inline-block
+	vertical-align: top
+	width: calc(0.15rem + 20vw)
+	height: 45vh
+	margin: 0 0 0 calc(0.15rem + 3.2vw)
+	position: relative
+	background-image: url("../assets/images/ourTeam3.webp")
+	background-repeat: no-repeat
+	background-position: left top
+	text-decoration: none
+	font-size: 0
+	p
+		img
+			height: 0%
+			width: 0%
+.a4:before
+	content: ''
+	display: block
+	position: absolute
+	height: 0%
+	width: 100%
+	bottom: 0
+	transition: height 0.5s ease-out
+	background: linear-gradient(rgba(244, 140, 130, 0.7),rgba(252, 227, 138, 0.7))
+	box-shadow: 0.7vmin 0.7vmin #95e1d3
+
+.a4:hover:before
+	height: 100%
+
+.a4:hover
+	transform: translate(-1vmin, -1vmin)
+	transition: transform 500ms ease-in-out
+	.our4
+		width: 15vmin
+		display: inline
+		height: 2vh
+		color: white
+		font-size: 2vmin
+		top: 50%
+
+		-ms-transform: translate(-50%, -50%)
+		transform: translate(-50%, -50%)
+		position: relative
+		img
+			height: 10%
+			width: 10%
+			display: inline-block
+			margin: 0 auto
+			color: red
+.a5:before
+	content: ''
+	display: block
+	position: absolute
+	height: 0%
+	width: 100%
+	bottom: 0
+	transition: height 0.5s ease-out
+	background: linear-gradient(rgba(244, 140, 130, 0.7),rgba(252, 227, 138, 0.7))
+	box-shadow: 0.7vmin 0.7vmin #95e1d3
+
+.a5:hover:before
+	height: 100%
+
+.a5:hover
+	transform: translate(-1vmin, -1vmin)
+	transition: transform 500ms ease-in-out
+	.our5
+		width: 5vmin
+		display: inline
+		height: 2vh
+		color: white
+		font-size: 2vmin
+		top: 50%
+
+		-ms-transform: translate(-50%, -50%)
+		transform: translate(-50%, -50%)
+		position: relative
+		img
+			height: 10%
+			width: 10%
+			display: inline-block
+			margin: 0 auto
+.a6:before
+
+	content: ''
+	display: block
+	position: absolute
+	height: 0%
+	width: 100%
+	bottom: 0
+	transition: height 0.5s ease-out
+	background: linear-gradient(rgba(244, 140, 130, 0.7),rgba(252, 227, 138, 0.7))
+	box-shadow: 0.7vmin 0.7vmin #95e1d3
+
+.a6:hover:before
+	height: 100%
+
+.a6:hover
+	transform: translate(-1vmin, -1vmin)
+	transition: transform 500ms ease-in-out
+	.our6
+		width: 5vmin
+		display: inline
+		height: 2vh
+		color: white
+		font-size: 2vmin
+		top: 50%
+
+		-ms-transform: translate(-50%, -50%)
+		transform: translate(-50%, -50%)
+		position: relative
+		img
+			height: 10%
+			width: 10%
+			display: inline-block
+			margin: 0 auto
